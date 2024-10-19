@@ -1,0 +1,277 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Navigation*/
+
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    padding: 18px 15px;
+    align-items: center;
+    background-color: aliceblue;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.logo a{
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 10px 18px; 
+    letter-spacing: 4px;
+    color: black;
+    font-size: 15px;
+    font-family: Verdana, sans-serif;
+    font-weight: 400;
+    line-height: 23px;
+}
+strong{
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 0 8px 0px 0;
+}
+.logo a:hover{
+    background-color: #D8D8D8;
+}
+.menu-bar ul li{
+    display: inline-block;
+}
+.menu-bar ul li a{
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 10px 16px; 
+    letter-spacing: 4px;
+    color: black;
+    font-size: 15px;
+    font-family: Verdana, sans-serif;
+    font-weight: 400;
+    line-height: 23px;
+}
+.menu-bar ul li a:hover{
+    background-color: #D8D8D8;
+}
+
+
+/*Banner*/
+
+.banner{
+    height: 100vh;
+    background: url(img/architect.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banner h1{
+    color: #fdfdfd;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 54px;
+    letter-spacing: 5px;
+    padding: 25px;
+}
+.bold{
+    margin: 10px 10px;
+    background-color: #363839;
+    opacity: .90;
+    padding: 10px 15px 10px 16px;
+}
+
+.container{
+    width: 95%;
+    margin: 0 auto;
+}
+h1{
+    padding: 50px 0px 20px 0px;;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 400;
+    border-bottom: 1px solid gray;
+}
+
+.card{
+    padding-top: 40px;
+    display: flex;
+    gap: 20px;
+}
+.card-2{
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+h3{
+    padding: 10px 15px;
+    background-color: #000000;
+    color: #fdfdfd;
+    display: inline-block;
+    font-family: Verdana, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 23px;
+}
+.box_one {
+    background-image: url(img/house5.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30vh;
+    width: 25%;
+}
+.box_two {
+    background-image: url(img/house2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30vh;
+    width: 25%;
+}
+.box_three {
+    background-image: url(img/house3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30vh;
+    width: 25%;
+}
+.box_four {
+    background-image: url(img/house4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30vh;
+    width: 25%;
+}
+.box_5 {
+    background-image: url(img/5.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30vh;
+    width: 25%;
+}
+.box_6 {
+    background-image: url(img/6.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30vh;
+    width: 25%;
+}
+.box_7 {
+    background-image: url(img/7.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30vh;
+    width: 25%;
+}
+.box_8 {
+    background-image: url(img/8.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30vh;
+    width: 25%;
+}
+.text{
+    padding-top: 20px;
+    font-family: Verdana, sans-serif;
+    font-size: 15px;
+    line-height: 23px;
+    font-weight: 400;
+}
+
+img{
+    width: 100%;
+}
+h2{
+    padding: 10px 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+}
+h4{
+    padding: 10px 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 23px;
+    color: #828282;
+}
+p{
+    padding: 10px 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 23px; 
+}
+.btn{
+    padding: 10px 0;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 23px; 
+    background-color: #F1F1F1;
+    color: #000000;
+}
+a:hover{
+    background-color: beige;
+}
+
+.w3-form input{
+    width: 100%;
+    padding: 10px 10px;
+    font-size: 15px;
+    font-family: Verdana, sans-serif;
+    font-weight: 400;
+    line-height: 23px;
+}
+.w3-form button{
+    padding: 10px 15px;
+    font-size: 15px;
+    font-family: Verdana, sans-serif;
+    font-weight: 400;
+    line-height: 23px;
+    text-align: center;
+    border: none;
+    background-color: #000000;
+    color: white;
+}
+.w3-form button:hover{
+    color: #000000;
+    background-color: #edf1f7;
+}
+
+.pic{
+    padding: 25px 0;
+}
+.pic img {
+    width: 100%;
+}
+
+.footer{
+    padding: 30px 0;
+    background-color: #000000;
+    color: white;
+    font-size: 15px;
+    font-family:  Verdana, sans-serif;
+    font-weight: 400;
+    line-height: 23px;
+    text-align: center;
+}
+.btns{
+    color: white;
+}

@@ -1,0 +1,1710 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+img{
+   width: 100%;
+   object-fit: cover;
+   display: block;
+}
+
+/*Header Section*/
+
+.header{
+    background-image: url(img/Asset\ 18.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 85vh;
+    position: relative;
+ }
+ .header::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-width: 42.5vh;
+    border-style: solid;
+    border-color: black;
+    opacity: .3;
+ }
+ .main{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+ }
+ .nav-bar{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0 0;
+ }
+ .logo{
+    width: 25%;
+ }
+ .mobile-icon{
+   display: none;
+ }
+ .menu ul li{
+    display: inline-block;
+    padding: 13px 0;
+    position: relative;
+ }
+ .menu ul li a{
+    text-decoration: none;
+    font-size: 15px;
+    color: #fff;
+    padding: 5px 12px;
+    text-transform: capitalize;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+ }
+ .menu ul li a i{
+    font-size: 10px;
+ }
+ .menu ul li:hover .main-a{
+    color: coral;
+    background-color: rgba(104, 82, 82, 0.445);
+ }
+ .menu ul li:nth-child(8){
+    background-color: #dec4c4;
+    padding: 5px;
+    margin-left: 15px;
+ }
+ .menu ul li:nth-child(8) a{
+    color: #329292;   
+ }
+ .drop-down ul li:hover{
+   background-color: #9b6b6bda;
+ }
+ .drop-down ul li a:hover{
+   color: coral;
+ }
+ .drop-down ul{
+    position: absolute;
+    top: 39px;
+    left: 0;
+    transition: .3s ease-in-out;
+    transform: scaleY(0);
+    transform-origin: top;
+    width: 100%;
+ }
+ .menu ul li:hover .drop-down ul{
+    transform: scaleY(1);
+    z-index: 1;
+ }
+ .drop-down ul li{
+    display: block;
+    border-bottom: 1px solid #fff;
+    padding: 5px;
+    text-align: start; 
+    background-color: rgb(167, 151, 151);
+ }
+ .drop-down ul li:last-child{
+    border: none;
+ }
+ .conten{
+  padding: 95px 0;
+ }
+ .conten h4{
+    margin: 10px 0;
+    font-size: 30px;
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+    font-weight: 400;
+    color: #fff;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+ }
+ .conten h4 span{
+   height: 1px;
+   width: 13%;
+   background-color: #fff;
+ }
+ /* .conten h4::after{
+    content: "";
+    position: absolute;
+    top: 60%;
+    left: 28%;
+    border-style: solid;
+    border-width: .1px 80px;
+ }
+ .conten h4::before{
+    content: "";
+    position: absolute;
+    top: 60%;
+    right: 28%;
+    border-style: solid;
+    border-width: 1px 80px;
+ } */
+ .conten h2{
+    font-size: 60px;
+    color: #fff;
+    width: 55%;
+    margin: 10px auto;
+    font-weight: 400;
+    font-family: "Playfair Display", serif;
+    line-height: 1;
+ }
+ .conten a{
+    text-decoration: none;
+    text-transform: capitalize;
+    background-color: #dec4c4;
+    color: #234d4d;
+    font-size: 20px;
+    font-family: "Playfair Display", serif;
+    padding: 8px 25px;
+    line-height: 6;
+}
+ 
+.offer{
+    padding: 80px 0;
+    background-color: #e8ffff5e;
+ }
+ .container{
+    width: 80%;
+    margin: 0 auto;
+ }
+ .offer-title h4{
+    font-size: 20px;
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+    text-transform: capitalize;
+    color: #234d4d;
+    font-weight: 500;
+ }
+ .offer-title h2{
+    font-size: 40px;
+    text-transform: capitalize;
+    font-family: "Playfair Display", serif;
+    color: #234d4d;
+    font-weight: 500;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+ }
+ .offer-title h2 span{
+   height: 1px;
+  width: 74%;
+  background-color: #234d4d;
+  margin-top: 10px;
+ }
+
+/*
+ .offer-title h2::before{
+    content: "";
+    position: absolute;
+    top: 60%;
+    right: 0;
+    border-style: solid;
+    border-width: 1px 390px;
+ }*/
+ .tent-photo{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   gap: 15px;
+   padding: 40px 0;
+}
+.tent-pic{
+   position: relative;
+   height: 320px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   z-index: 1;
+}
+.one{
+   background-image: url(img/Asset\ 14.png);
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+.two{
+   background-image: url(img/Asset\ 15.png);
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+.three{
+   background-image: url(img/Asset\ 17.png);
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+.four{
+   background-image: url(img/Asset\ 16.png);
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+.pic-name h3{
+   font-size: 20px;
+   text-transform: capitalize;
+   font-family: "Playfair Display", serif;
+   color: #fff;
+   font-weight: 600;
+}
+.pic-name h4{
+   text-transform: capitalize;
+   margin: 20px 0 0;
+}
+.pic-name h4 a{
+   font-size: 12px;
+   font-family: "Playfair Display", serif;
+   text-decoration: none;
+   border: 1px solid #fff;
+   padding: 8px 18px;
+   color: #fff;
+   font-weight: 400;
+}
+.tent-pic::after{
+  content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   border-style: solid;
+   border-width: 160px 0 ;
+   opacity: 0.2;
+   z-index: -1;
+}
+
+
+ .tent-button{
+    text-align: center;
+    margin-top: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .tent-button span {
+   height: 1px;
+   width: 440px;
+   background: #234d4d;
+ }
+ /*.tent-button::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    border-style: solid;
+    border-width: 1px 220px;
+    border-color: #234d4d;
+ }
+ .tent-button::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    border-style: solid;
+    border-width: 1px 220px;
+    border-color: #234d4d;
+ }*/
+ .tent-click {
+    background-color: transparent;
+    border: 1px solid #234d4d;
+    padding: 10px 30px;    
+ }
+ .tent-click a{
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #234d4d;
+    font-family: "Playfair Display", serif;
+ }
+ .about{
+    display: flex;
+    padding-top: 100px;
+    padding-bottom: 30px;
+ }
+ .about-pic img{
+    width: 300px;
+    height: 350px;
+ }
+ .about-text{
+    text-align: center;
+    color: #234d4d;
+    font-family: "Playfair Display", serif;
+    margin: auto 0;
+ }
+ .about-text h3{
+    text-transform: capitalize;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+ }
+ .about-text h3 span{
+   height: 1px;
+   width: 100px;
+   background-color: #234d4d;
+ }
+ /*.about-text h3::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 70px;
+    border-style: solid;
+    border-width: 1px 50px;
+ }
+ .about-text h3::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 70px;
+    border-style: solid;
+    border-width: 1px 50px;
+ }*/
+ .about-text h2{
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 40px;
+ }
+ .about-text p{
+    font-weight: 400;
+    font-size: 13px;
+    font-family: "Montserrat", sans-serif;
+    width: 78%;
+    margin: 18px auto;
+ }
+ .about-button{
+    margin-top: 30px;
+ }
+ .about-button a{
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 17px;
+    color: #234d4d;
+    border: 1px solid #234d4d;
+    padding: 5px 20px;
+}
+
+.provide{
+    background-color: #329292;
+ }
+ .pro-area{
+    display: flex;
+ }
+ .pro-photo{
+    width: 35%;
+ }
+ .pro-photo img{
+    height: 435px;
+    display: block;
+ }
+ .pro-text{
+    width: 65%;
+    margin: auto 0;
+ }
+ .pro-text-area{
+    width: 70%;
+    margin: 0 auto;
+    color: #fff;
+ }
+ .pro-text-area h3{
+    font-size: 20px;
+    text-transform: capitalize;
+    font-family: "Playfair Display", serif;
+    font-weight: 500;
+    font-style: italic;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+ }
+ .pro-text-area h3 span{
+   height: 1px;
+   width: 210px;
+   margin-top: 10px;
+   background-color: #fff;
+ }
+ /*.pro-text-area h3::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    border-width: 1px 100px;
+    border-style: solid;
+ }*/
+ .pro-text-area h2{
+    font-size: 40px;
+    text-transform: capitalize;
+    font-family: "Playfair Display", serif;
+    font-weight: 500;
+ }
+ .pro-text-area p{
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    padding-top: 20px;
+    width: 82%;
+ }
+ .pro-button{
+    margin-top: 30px;
+ }
+ .pro-button a{
+   text-decoration: none;
+   text-transform: capitalize;
+   font-size: 17px;
+   color: #fff;
+   border: 1px solid #fff;
+   padding: 10px 20px;
+}
+
+
+.operate{
+   padding: 100px 0;
+   background-color: #e8ffff5e;
+ }
+ .op-slide{
+   margin: 15px 0 0 135px;
+ }
+ .swiper {
+   width: 100%;
+   height: 100%;
+ }
+ .swiper-slide {
+   text-align: center;
+   font-size: 18px;
+   background: #fff;
+ 
+ }
+ .swiper-slide img {
+   display: block;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+ }
+ .swiper-button-next::after, .swiper-rtl .swiper-button-prev::after {
+   content: "";
+ }
+.swiper-button-prev::after, .swiper-rtl .swiper-button-next::after {
+   content: "";
+ }
+ .swiper-left,
+ .swiper-right{
+   background-color: #e5e6e6;
+   border-radius: 50%;
+   width: 40px;
+   height: 40px;
+   font-size: 20px;
+   color: #0c2020;
+ }
+ .ops{
+   padding: 10px 0;
+ }
+ .ops p{
+   font-family: "Montserrat", sans-serif;
+   font-size: 14px;
+ }
+ .opte-pic{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   gap: 25px;
+   margin: 10px 0;
+ }
+ .pic-box img{
+   width: 100%;
+   height: 340px;
+ }
+ .pic-box {
+   position: relative;
+ }
+ .pic-box h3{
+   font-size: 28px;
+   font-family: "Playfair Display", serif;
+   color: #fff;
+   font-weight: 400;
+   position: absolute;
+   bottom: 15px;
+   left: 10px;
+}
+
+
+
+
+.event{
+   background-color: #e8ffff5e;
+   padding: 30px 0 100px;
+}
+ .event-area{
+   display: flex;
+   justify-content: space-between;
+   
+ }
+ .event-pic{
+   width: 37%;
+   position: relative;
+ }
+ .event-area span{
+   width: 1px;
+   background-color: #234d4d;
+ }
+ /*.event-pic::before{
+   content: "";
+   position: absolute;
+   top: 0;
+   right: -20%;
+   bottom: 0;
+   border-style: solid;
+   border-width: 1px;
+   border-color: #234d4d;
+ }*/
+ .event-pic img{
+   height: 70vh;
+ }
+ .event-text{
+   width: 50%;
+   margin: auto 0;
+ }
+ .event-text h4{
+   font-size: 20px;
+   font-family: "Playfair Display", serif;
+   font-style: italic;
+   text-transform: capitalize;
+   color: #234d4d;
+   font-weight: 500;
+   position: relative;
+   display: flex;
+   align-items: center;
+   gap: 20px;
+ }
+ .event-text h4 span{
+   height: 1px;
+   width: 50%;
+   background-color: #234d4d;
+ }
+ /*.event-text h4::before{
+   content: "";
+  position: absolute;
+  top: 50%;
+  left: 33%;
+  border-width: 1px 135px;
+  border-style: solid;
+ }*/
+ .event-text h2{
+   font-size: 40px;
+   text-transform: capitalize;
+   font-family: "Playfair Display", serif;
+   color: #234d4d;
+   font-weight: 500;
+ }
+ .event-text p{
+   font-family: "Montserrat", sans-serif;
+   font-size: 14px;
+   padding: 10px 0;
+   color: #234d4d;
+ }
+ .event-button a{
+   border: 1px solid #234d4d;
+   color: #234d4d;
+   padding: 10px 20px;
+}
+ 
+.occasion{
+   background-color: #329292 ;
+   padding: 50px 0;
+ }
+ .occasion-title h4{
+   font-size: 20px;
+   font-family: "Playfair Display", serif;
+   font-style: italic;
+   text-transform: capitalize;
+   color: #fff;
+   font-weight: 500;
+   text-align: center;
+   position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 20px;
+ }
+ .occasion-title h4 span{
+   width: 145px;
+   height: 1px;
+   background-color: #fff;
+ }
+ /*.occasion-title h4::before{
+   content: "";
+   position: absolute;
+   top: 50%;
+   left: 30%;
+   border-width: 1px 75px;
+   border-style: solid;
+ }
+ .occasion-title h4::after{
+   content: "";
+   position: absolute;
+   top: 50%;
+   right: 30%;
+   border-width: 1px 75px;
+   border-style: solid;
+ }*/
+ .occasion-title h2{
+   font-size: 40px;
+   text-transform: capitalize;
+   font-family: "Playfair Display", serif;
+   color: #fff;
+   font-weight: 500;
+   text-align: center;
+ }
+ .occasion-gallery{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 25px;
+   padding: 40px 0 0;
+ }
+ .occasion-pic{
+   position: relative;
+   height: 290px;
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   z-index: 1;
+ }
+ .occasion-name h3{
+   font-size: 35px;
+ }
+ .occ-one{
+   background-image: url(img/Asset\ 12.png); 
+}
+.occ-two{
+   background-image: url(img/Asset\ 4.png); 
+}
+.occ-three{
+   background-image: url(img/Asset\ 3.png); 
+}
+.occ-four{
+   background-image: url(img/Asset\ 2.png); 
+}
+ .occasion-pic::after{
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   border-style: solid;
+   border-width: 145px 0;
+   opacity: .3;
+   z-index: -1;
+}
+
+
+.contact{
+   background-color: #e8ffff5e;
+   padding: 80px 0;
+ }
+ .contact-data{
+   display: flex;
+ }
+ .contact-info{
+   width: 50%;
+   margin: auto 0;
+ }
+ .contact-info h4{
+   font-size: 23px;
+   font-family: "Playfair Display", serif;
+   font-style: italic;
+   text-transform: capitalize;
+   color: #234d4d;
+   font-weight: 500;
+   position: relative;
+   display: flex;
+   align-items: center;
+   gap: 10px;
+ }
+ .contact-info h4 span{
+   width: 50%;
+   height: 1px;
+   background-color: #234d4d;
+ }
+ /*.contact-info h4::after{
+   content: "";
+   position: absolute;
+   top: 50%;
+   left: 28%;
+   border-width: 1px 112px;
+   border-style: solid;
+ }*/
+
+ .contact-info h2{
+   font-size: 40px;
+   text-transform: capitalize;
+   font-family: "Playfair Display", serif;
+   color: #234d4d;
+   font-weight: 500;
+   width: 80%;
+ }
+ .contact-info h3{
+   font-size: 35px;
+   text-transform: capitalize;
+   font-family: "Playfair Display", serif;
+   color: #234d4d;
+   font-weight: 300;
+   padding-top: 30px;
+   position: relative;
+   display: flex;
+   align-items: center;
+   gap: 50px;
+ }
+ .contact-info h3 span{
+   width: 100px;
+  height: 1px;
+  background-color: #234d4d;
+  margin-top: 10px;
+  position: relative;
+ }
+ .contact-info h3 span h5{
+   position: absolute;
+   top: -20.5px;
+   right: -3px;
+ }
+ /*.contact-info h3::after{
+   content: "";
+   position: absolute;
+   top: 75%;
+   left: 55%;
+   border-width: 1px 50px;
+   border-style: solid;
+ }*/
+
+ .contact-info p{
+   font-family: "Montserrat", sans-serif;
+   font-size: 14px;
+   color: #234d4d;
+ }
+ .contact-icon{
+  padding: 30px 0 0;
+ }
+ .contact-icon i{
+   font-size: 20px;
+   color: #234d4d;
+ }
+ .location{
+   display: flex;
+   gap: 20px;
+ }
+ .loc-icn{
+   width: 40px;
+   height: 40px;
+   border: 1px solid;
+   text-align: center;
+   line-height: 40px;
+   border-radius: 50%;
+ }
+ .loc-tx{
+   width: 85%;
+   margin: auto 0 ;
+ }
+ .mail{
+   padding: 20px 0;
+ }
+
+ .contact-form{
+   padding: 30px 50px;
+   background-color: #fff;
+   width: 50%;
+   box-shadow: 4px 4px 8px 0 rgba(248, 245, 245, 0.342), 6px 5px 9px 0 rgba(87, 42, 42, 0.267);
+ }
+ .contact-form input{
+   padding: 13px 15px;
+   outline: none;
+   font-size: 14px;
+   text-transform: capitalize;
+   font-family: "Montserrat", sans-serif;
+   color: #0c2020;
+   margin: 10px ;
+   box-shadow: 4px 4px 8px 0 rgba(248, 245, 245, 0.342), 6px 5px 9px 0 rgba(87, 42, 42, 0.267);
+   border: none;
+ }
+ .form-name input{
+   width: 44%;
+ }
+ .form-info input{
+   width: 94%;
+ }
+ .check label{
+   font-size: 12px;
+ }
+ .bt-bottom{
+   width: 94%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding-top: 20px;
+ }
+ .bt-bottom i{
+   font-size: 30px;
+ }
+ .robot label{
+   font-size: 11px;
+ }
+ .bt button{
+   font-size: 18px;
+   text-transform: capitalize;
+   padding: 8px 40px;
+   border-radius: 0;
+   background-color: #234d4d;
+   color: #fff;
+   outline: none;
+ }
+
+
+.main-footer{
+   background-color: #329292 ;
+   color: #fff;
+   position: relative;
+ }
+ .footer{
+   display: flex;
+   border-bottom: 1px solid #fff;
+   padding: 40px 0;
+ }
+ .ff-text{
+   display: flex;
+   width: 62%;
+   margin: auto 0;
+ }
+ .f-offer{
+   width: 45%;
+ }
+ .f-tent a,
+ .f-lag a,
+ .f-offer a,
+ .f-icon a{
+   text-decoration: none;
+   color: #fff;
+ }
+ .f-tent{
+   width: 35%;
+ }
+ .f-lag{
+   width: 21%;
+ }
+ .f-logo{
+   width: 38%;
+   margin: auto 0;
+ }
+ 
+ .f-logo img{
+   width: 265px;
+ }
+ .f-logo p{
+   width: 265px;
+   font-size: 14px;
+   text-transform: capitalize;
+   font-family: "Montserrat", sans-serif;
+   padding: 15px 0;
+ }
+ .ff-text h4{
+   font-size: 14px;
+   text-transform: capitalize;
+   font-family: "Montserrat", sans-serif;
+   padding-bottom: 10px;
+ }
+ .ff-text p{
+   font-size: 14px;
+   text-transform: capitalize;
+   font-family: "Montserrat", sans-serif;
+   line-height: 2;
+ }
+ .f-logo-icon{
+   display: flex;
+   gap: 10px;
+ }
+ .f-icon{
+   width: 35px;
+   height: 35px;
+   text-align: center;
+   line-height: 35px;
+   border: 1px  solid;
+   border-radius: 50%;
+ }
+ .f-logo i{
+   font-size: 18px;
+ }
+ .media p{
+   font-size: 17px;
+   text-transform: capitalize;
+   font-family: "Montserrat", sans-serif;
+   text-align: center;
+   padding: 15px 0 30px;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 900px){
+   .container {
+      width: 95%;
+   }
+   .header {
+      height: 40vh;
+   }
+   .header::after {
+      border-width: 20vh;
+   }
+   .main {
+      width: 95%;
+   }
+   .nav-bar {
+      padding: 30px 0 0;
+   }
+   .logo {
+      width: 20%;
+   }
+   .menu-bar{
+      width: 80%;
+   }
+   .menu ul li a {
+      font-size: 12px;
+      padding: 5px 5px;
+   }
+   .menu ul li:nth-child(8) {
+      margin-left: 0;
+   }
+
+   .conten {
+      padding: 20px 0;
+   }
+   .conten h4 {
+      font-size: 22px;
+   }
+   .conten h2 {
+      font-size: 40px;
+      width: 75%;
+   }
+   .offer {
+      padding: 30px 0;
+   }
+   .offer-title h2 {
+      font-size: 30px;
+   }
+   .offer-title h2 span{
+      width: 70%;
+   }
+   .tent-photo {
+      padding: 25px 0;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+   }
+   .tent-click a {
+      font-size: 15px;
+   }
+   .tent-click {
+      padding: 7px 15px;
+   }
+   .pic-name {
+      left: 33%;
+   }
+   .tent-pic:nth-child(4) .pic-name {
+      left: 25%;
+   }
+   .tent-button span {
+      width: 40%;
+   }
+   .about {
+      padding-top: 43px;
+      padding-bottom: 30px;
+    }
+    .about-pic img {
+      width: 200px;
+      height: 280px;
+    }
+    .about-text h3 {
+      font-size: 18px;
+      gap: 10px;
+    }
+    .about-text h3 span {
+      width: 25%;
+    }
+    .about-text h2 {
+      font-size: 30px;
+    }
+    .about-text p {
+      font-size: 12px;
+      width: 85%;
+      text-align: justify;
+    }
+    .about-button {
+      margin-top: 20px;
+    }
+    .about-button a {
+      font-size: 15px;
+   }
+   .pro-text {
+      width: 60%;
+   }
+   .pro-photo {
+      width: 40%;
+   }
+   .pro-text-area {
+      width: 85%;
+   }
+   .pro-text-area h3 span {
+      width: 40%;
+   }
+   .pro-text-area h2 {
+      font-size: 35px;
+   }
+   .pro-text-area p {
+      font-size: 13px;
+      width: 85%;
+      text-align: justify;
+   }
+   .pro-button a {
+      font-size: 14px;
+   }
+   .operate {
+      padding: 30px 0;
+   }
+   .op-slide {
+      margin: 15px 0 0 20px;
+   }
+   
+   .event-pic {
+      width: 40%;
+   }
+   .event-text {
+      margin: 0;
+    }
+   .event-pic img {
+      height: 100%;
+    }
+   .event-text h4 span {
+      width: 42%;
+   }
+   .event-text h2 {
+      font-size: 30px;
+   }
+   .event-text p {
+      font-size: 12px;
+      text-align: justify;
+   }
+   .occasion {
+      padding: 30px 0;
+   }
+   .occasion-title h4 span {
+      width: 12%;
+   }
+   .occasion-title h2{
+      font-size: 30px;
+   }
+   .occasion-gallery {
+      grid-template-columns: 1fr 1fr;
+   }
+   .occasion-name {
+      top: 30%;
+      left: 30%;
+   }
+   .contact {
+      background-color: #e8ffff5e;
+      padding: 45px 0;
+   }
+   .contact-info h4 {
+      font-size: 20px;
+   }
+   .contact-info h4 span {
+      width: 45%;
+   }
+   .contact-info h2 {
+      font-size: 25px;
+   }
+   .location {
+      gap: 10px;
+   }
+   .loc-icn {
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+   }
+   .contact-icon i {
+      font-size: 15px;
+   }
+   .contact-info p {
+      font-size: 12px;
+   }
+   .contact-info h3 {
+      font-size: 25px;
+   }
+   .contact-info h3 span {
+      width: 25%;
+   }
+   .contact-info h3 span h5 {
+      top: -14.5px;
+   }
+   .contact-form {
+      padding: 10px 0px;
+   }
+   .form-name input {
+      width: 42%;
+   }
+   .check {
+      display: flex;
+   }
+   .check label {
+      padding-top: 10px;
+   }
+   .footer {
+      justify-content: space-between;
+   }
+   .f-logo {
+      width: 35%;
+   }
+   .ff-text {
+      width: 60%;
+    }
+   .f-logo img {
+      width: 100%;
+    }
+    .f-logo p {
+      width: 100%;
+      font-size: 13px;
+    }
+    .ff-text p {
+      font-size: 13px;
+      line-height: 1.5;
+   }
+}
+
+@media only screen and (max-width: 600px){
+   .container {
+      width: 90%;
+   }
+   .header {
+      height: 60vh;
+   }
+   .header::after {
+      border-width: 30vh;
+   }
+   .menu-bar{
+      width: 15%;
+   }
+   .logo {
+      width: 50%;
+   }
+   .menu {
+      display: none;
+   }
+   .mobile-icon {
+      display: block;
+      border: 1px solid #fff;
+      width: 35px;
+      height: 35px;
+      line-height: 35px;
+      margin-right: 20px;
+   }
+   .mobile-icon a {
+      font-size: 20px;
+      color: #fff;
+   }
+   .conten {
+      padding: 35px 0;
+   }
+   .conten h4 {
+      font-size: 22px;
+   }
+   .conten h2 {
+      font-size: 40px;
+      width: 75%;
+      padding: 30px 0;
+   }
+   .offer {
+      padding: 30px 0;
+   }
+   .offer-title h2 {
+      font-size: 30px;
+   }
+   .offer-title h2 span{
+      width: 40%;
+   }
+   .tent-photo {
+      padding: 25px 0;
+      grid-template-columns: 1fr;
+   }
+   .tent-click a {
+      font-size: 15px;
+   }
+   .tent-click {
+      padding: 7px 15px;
+   }
+   .pic-name {
+      left: 33%;
+   }
+   .tent-pic:nth-child(4) .pic-name {
+      left: 25%;
+   }
+   .tent-button span {
+      width: 31%;
+   }
+   .about {
+      display: block;
+      padding-top: 45px;
+   }
+   .about-pic img {
+      height: 280px;
+      width: 100%;
+    }
+   .about-text {
+      padding: 25px 0;
+   }
+   .about-text h3 span{
+      width: 22%;
+   }
+   .about-text h2 {
+      font-size: 35px;
+   }
+   .about-text p {
+      width: 95%;
+      text-align: justify;
+   }
+   .about-button {
+      margin-top: 25px;
+   }
+   .about-button a {
+      font-size: 15px;
+      padding: 4px 15px;
+   }
+   .provide {
+      padding: 10px 0;
+    }
+   .pro-area {
+      display: block;
+   }
+   .pro-photo {
+      width: 95%;
+      margin: 0 auto;
+   }
+   .pro-photo img{
+      height: 320px;
+   }
+   .pro-text {
+      width: 100%;
+   }
+   .pro-text-area {
+      width: 85%;
+      margin: 0 auto;
+      color: #fff;
+      padding: 10px 0 40px;
+    }
+   .pro-text-area h3 span {
+      width: 35%;
+   }
+   .pro-text-area h2 {
+      font-size: 30px;
+   }
+   .pro-text-area p{
+      text-align: justify;
+      width: 100%;
+   }
+   .operate {
+      padding: 40px 0;
+   }
+   .ops p {
+      font-size: 11.5px;
+   }
+   .op-slide{
+      margin: 0 20px;
+   }
+   .pic-box img{
+    
+   }
+   .event {
+      padding: 30px 0;
+    }
+   .event-area{
+      display: block;
+   }
+   .event-pic {
+      width: auto;
+   }
+   .event-pic img {
+      height: auto;
+   }
+   .event-text {
+      width: 100%;
+      margin: auto 0;
+      padding: 25px 0 0;
+   }
+   .event-text h4 {
+      font-size: 18px;
+   }
+   .event-text h4 span{
+      width: 35%;
+   }
+   .event-text h2 {
+      font-size: 26px;
+   }
+   .event-text p {
+      text-align: justify;
+      font-size: 13px;
+   }
+   .occasion {
+      padding: 30px 0;
+   }
+   .occasion-title h4 span{
+      width: 25%;
+   }
+   .occasion-title h2{
+      font-size: 30px;
+   }
+   .occasion-gallery {
+      grid-template-columns: 1fr;
+   }
+   .occasion-name {
+      top: 30%;
+      left: 30%;
+   }
+
+   .contact-data {
+      display: block;
+   }
+   .contact-info {
+      width: 100%;
+      padding: 0 0 30px;
+   }
+   .contact {
+      padding: 40px 0;
+   }
+   .contact-info h2 {
+      font-size: 30px;
+      width: 95%;
+   }
+   .contact-info h3 {
+      font-size: 25px;
+      gap: 40px;
+   }
+   .contact-info h3 span {
+      width: 80px;
+   }
+   .contact-info h3 span h5 {
+      top: -14.5px;
+   }
+   .contact-info p {
+      font-size: 13px;
+   }
+   .contact-form {
+      padding: 0;
+      width: 100%;
+   }
+   .check {
+      display: flex;
+   }
+   .form-name input {
+      width: 42%;
+    }
+   .check label {
+      font-size: 13px;
+      padding-top: 15px;
+      width: 90%;
+   }
+   .bt-bottom {
+      padding: 20px 0;
+   }
+
+   .footer {
+      display: block;
+   }
+   .f-logo,
+   .f-logo img,
+   .f-logo p{
+      width: 100%;
+      text-align: center;
+   }
+   .f-logo-icon{
+      justify-content: center;
+   }
+   .ff-text {
+      display: block;
+      width: 100%;
+      padding-top: 20px;
+      text-align: center;
+    }
+    .ff-text h4{
+      font-size: 16px;
+    }
+   .f-offer,.f-tent,.f-lag{
+      width: 100%;
+   }
+   .f-tent{
+      padding: 35px 0;
+   }
+
+}
+
+@media only screen and (max-width: 375px){
+   .container {
+      width: 85%;
+   }
+   .header {
+      height: 60vh;
+   }
+   .header::after {
+      border-width: 30vh;
+   }
+   .nav-bar{
+      display: flex;
+      justify-content: space-between;
+   }
+   .logo {
+      width: 60%;
+   }
+   .menu {
+      display: none;
+   }
+   .mobile-icon {
+      display: block;
+      border: 1px solid #fff;
+      width: 35px;
+      height: 35px;
+      line-height: 35px;
+      margin-right: 20px;
+   }
+   .mobile-icon a {
+      font-size: 20px;
+      color: #fff;
+   }
+   .conten {
+      padding: 35px 0;
+   }
+   .conten h4 {
+      font-size: 22px;
+   }
+   .conten h2 {
+      font-size: 40px;
+      width: 100%;
+   }
+   .offer {
+      padding: 25px 0;
+   }
+   .offer-title h2 {
+      font-size: 30px;
+   }
+   .offer-title h2 span{
+      display: none;
+   }
+   .tent-photo {
+      padding: 25px 0;
+      grid-template-columns: 1fr;
+   }
+   .tent-click a {
+      font-size: 15px;
+   }
+   .tent-click {
+      padding: 7px 15px;
+   }
+   .tent-button span {
+      display: none;
+   }
+   .about {
+      display: block;
+      padding-top: 45px;
+   }
+   .about-pic img {
+      height: 280px;
+      width: 100%;
+    }
+   .about-text {
+      padding: 25px 0;
+   }
+   .about-text h3 span{
+      display: none;
+   }
+   .about-text h2 {
+      font-size: 35px;
+   }
+   .about-text p {
+      width: 95%;
+      text-align: justify;
+   }
+   .about-button {
+      margin-top: 25px;
+   }
+   .about-button a {
+      font-size: 15px;
+      padding: 4px 15px;
+   }
+   .provide {
+      padding: 10px 0;
+    }
+   .pro-area {
+      display: block;
+   }
+   .pro-photo {
+      width: 95%;
+      margin: 0 auto;
+   }
+   .pro-photo img{
+      height: 320px;
+   }
+   .pro-text {
+      width: 100%;
+   }
+   .pro-text-area {
+      width: 85%;
+      margin: 0 auto;
+      color: #fff;
+      padding: 10px 0 40px;
+    }
+   .pro-text-area h3 span {
+      display: none;
+   }
+   .pro-text-area h2 {
+      font-size: 30px;
+   }
+   .pro-text-area p{
+      text-align: justify;
+      width: 100%;
+   }
+   .operate {
+      padding: 40px 0;
+   }
+   .ops p {
+      font-size: 11.5px;
+   }
+   
+   .event {
+      padding: 30px 0;
+    }
+   .event-area{
+      display: block;
+   }
+   .event-pic {
+      width: auto;
+   }
+   .event-pic img {
+      height: auto;
+   }
+   .event-text {
+      width: 100%;
+      margin: auto 0;
+      padding: 25px 0 0;
+   }
+   .event-text h4 {
+      font-size: 18px;
+   }
+   .event-text h4 span{
+      display: none;
+   }
+   .event-text h2 {
+      font-size: 26px;
+   }
+   .event-text p {
+      text-align: justify;
+      font-size: 13px;
+   }
+   .occasion {
+      padding: 30px 0;
+   }
+   .occasion-title h4{
+      text-align: start;
+   }
+   .occasion-title h4 span{
+      display: none;
+   }
+   .occasion-title h2{
+      font-size: 26px;
+   }
+   .occasion-gallery {
+      grid-template-columns: 1fr;
+   }
+   .occasion-name {
+      top: 25%;
+      left: 25%;
+   }
+   .contact-data {
+      display: block;
+   }
+   .contact-info {
+      width: 100%;
+      padding: 0 0 30px;
+   }
+   .contact {
+      padding: 40px 0;
+   }
+   .contact-info h2 {
+      font-size: 30px;
+      width: 100%;
+   }
+   .contact-info h3 {
+      font-size: 25px;
+      gap: 40px;
+   }
+   .contact-info h3 span {
+      width: 80px;
+   }
+   .contact-info h3 span h5 {
+      top: -14.5px;
+   }
+   .contact-info p {
+      font-size: 13px;
+   }
+   .contact-form {
+      padding: 0;
+      width: 100%;
+   }
+   .check {
+      display: flex;
+   }
+   .form-name input {
+      width: 42%;
+    }
+   .check label {
+      font-size: 13px;
+      padding-top: 15px;
+   }
+   .bt-bottom {
+      padding: 20px 0;
+   }
+   .footer {
+      display: block;
+   }
+   .f-logo,
+   .f-logo img,
+   .f-logo p{
+      width: 100%;
+      text-align: center;
+   }
+   .f-logo-icon{
+      justify-content: center;
+   }
+   .ff-text {
+      display: block;
+      width: 100%;
+      padding-top: 20px;
+      text-align: center;
+    }
+    .ff-text h4{
+      font-size: 16px;
+    }
+   .f-offer,.f-tent,.f-lag{
+      width: 100%;
+   }
+   .f-tent{
+      padding: 35px 0;
+   }
+}
+
+
+
+
+
